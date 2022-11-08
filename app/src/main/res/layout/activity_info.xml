@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".InfoActivity">
+
+    <WebView
+        android:id="@+id/logout_window"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/linear_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/logout_window"
+        app:layout_constraintEnd_toEndOf="@+id/logout_window"
+        app:layout_constraintStart_toStartOf="@+id/logout_window"
+        app:layout_constraintTop_toTopOf="@+id/logout_window" >
+
+        <TextView
+            android:layout_marginTop="60dp"
+            android:id="@+id/username_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="UserName">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            ></ImageView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Followers: "
+                android:textStyle="bold"
+                android:textSize="18sp">
+            </TextView>
+
+            <TextView
+                android:layout_marginStart="4dp"
+                android:id="@+id/followers_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textSize="18sp">>
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Following: "
+                android:textStyle="bold"
+                android:textSize="18sp">
+            </TextView>
+
+            <TextView
+                android:layout_marginStart="4dp"
+                android:id="@+id/following_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textSize="18sp">>
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Repositories: "
+                android:textStyle="bold"
+                android:textSize="18sp">
+            </TextView>
+
+            <TextView
+                android:layout_marginStart="4dp"
+                android:id="@+id/repo_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textSize="18sp">>
+            </TextView>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_marginTop="200dp"
+            android:id="@+id/logout_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="logout">
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/linear_layout_vk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/logout_window"
+        app:layout_constraintEnd_toEndOf="@+id/logout_window"
+        app:layout_constraintStart_toStartOf="@+id/logout_window"
+        app:layout_constraintTop_toTopOf="@+id/logout_window" >
+
+        <TextView
+            android:id="@+id/vk_username_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UserName"
+            android:layout_marginTop="60dp"
+            android:textStyle="bold"
+            android:textSize="18sp">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/avatar_vk"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            ></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Birthday date:"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/birthday_date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textStyle="bold"
+            android:textSize="18sp">
+        </TextView>
+
+        <Button
+            android:layout_marginTop="200dp"
+            android:id="@+id/logout_button_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="logout">
+
+        </Button>
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
